@@ -69,6 +69,9 @@ span{
 .texto-justificado{
     text-align: justify;
 }
+.border-radius-none{
+    border-radius: 0px;
+}
 .no-padding{
     padding: 0;
 }
@@ -157,7 +160,7 @@ span{
     display: none;
     width: 70%;
     position: relative;
-    margin: auto;
+    margin: 0 auto;
     overflow: hidden;
 }
 .aside__imagen{
@@ -178,16 +181,18 @@ span{
     transform: translateY(0%);
 }
 .aside__nombre{
-    color: var(--blanco);
-    text-shadow: var(--negro) 0 2px 4px;
+    display: none;
 }
 @media (min-width: 768px) {
     .aside{
         display: block;
+        width: 100%;
         /*background-color: var(--azul);*/
         background-image: linear-gradient(to top, var(--azulelectricoclaro) 10%, var(--azulelectrico) 20% );
+        overflow: none;
     }
     .aside__nombre{
+        display: block;
         font-size: 1.7rem;
         color: var(--amarillo);
     }
@@ -195,11 +200,14 @@ span{
         font-size: 2.2rem;
     }
     .aside__imagen{
-        width: 100%;
+        border-radius: 0;
     }
     .aside__descripcion{
         color: var(--blanco);
         font-size: 1.4rem;
+        position: unset;
+        background-color: transparent;
+        transform: translateY(0%);
     }
 }
 /*============================
@@ -211,6 +219,26 @@ span{
 .section__descripcion{
     font-weight: 400;
 }
+.column__enlace{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.column__enlace a{
+    background-color: var(--azuloscuro);
+    color: var(--amarillo);
+    border: none;
+    padding: 1.5rem 2rem;
+}
+.column__enlace a:hover{
+    border: 2px solid var(--azulelectrico);
+    background-color: transparent;
+    color: var(--azulelectrico);
+    font-weight: 700;
+}
+.column__descripcion{
+    padding-bottom: 2rem;
+}
 @media (min-width: 768px) {
     .section{
         margin-top: 0;
@@ -220,7 +248,36 @@ span{
         font-family: var(--letrasecundria);
         color: var(--azuloscuro);
         font-size: 2rem;
-    }    
+    }
+    .column-grid{
+        display: grid;
+        grid-template-columns: 1fr !important;
+        border: 1px solid #c2bebe !important;
+        border-radius: 5px;
+    }
+    .column:nth-child(1){
+        text-align: center;
+    }
+    .column__descripcion{
+        padding: 2rem;
+    }
+    .column__enlace{
+        margin-bottom: 0;
+    }
+
+}
+@media (min-width: 992px) {
+    .column-grid{
+        grid-template-columns: 2fr 1.5fr !important;
+        border: none !important;
+    }
+    .article-formulario{
+        border-top: 1px solid grey;
+        padding-top: 3rem;
+    }
+    .column__enlace{
+        margin-bottom: 3rem;
+    }
 }
 /*============================
         Estilo article

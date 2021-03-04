@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somos ArteSevilla</title>
+    <meta name="description" content="Somos Sevilla es una organización amante de las bellas artes..">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" as="font"
+        crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="css/whatsApp.css" as="style">
+    <link rel="stylesheet" href="css/whatsApp.css">
+</head>
+
+<body>
+    <!--Logo de whatsApp-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=5493518043954&text=¡Hola!%20Bienvenido%20al%20mundo%20maravilloso%20de%20las%20Bellas%20Artes."
+        rel="noopener" class="float" target="_blank">
+        <picture>
+            <source loading="lazy" srcset="./img/whatsapp.webp" type="image/webp">
+            <img loading="lazy" src="./img/whatsapp.svg" alt="" title="WhatsApp">
+        </picture>
+    </a>
+    <header class="header">
+        <div class="header-box">
+            <img class="header-box__imagen iconos" src="img/ico-menu.svg" alt="icono de menu"
+                title="Click muestra autor - DobleClik oculta autor">
+        </div>
+        <div class="header-box">
+            <h1 class="header-box__nombre texto-mayuscula font-bold"><span>A</span>ntonio <span>S</span>evilla</h1>
+        </div>
+    </header>
+    <main class="main contenedor">
+        <aside class="aside">
+            <img class="aside__imagen border-radius3px" src="./img/pinturas/foto.jpg" alt="foto">
+            <h2 class="aside__nombre texto-centro texto-mayuscula font-bold"><span>A</span>ntonio <span>S</span>evilla
+            </h2>
+            <p class="aside__descripcion texto-justificado padding-left-rigth">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Totam nam fuga optio
+                odit ullam, modi dolorum,tempore vel tenetur aspernatur voluptas placeat minima numquam deserunt eum
+                possimus eaque dignissimos!
+                Esse.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nam fuga optio odit ullam,
+                modidolorum,tempore vel tenetur aspernatur voluptas placeat minima numquam deserunt eum possimus eaque
+                dignissimos!
+                Esse.
+            </p>
+        </aside>
+        <section class="section">
+            <h3 class="texto-centro">Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+            <article class="article-portafolio column-grid">
+                <div class="column">
+                    <img class="column__imagen" src="./img/pinturas/pintura1.jpg" alt="cuadro de imagen">
+                    <p class="column__enlace"><a href="index.html" class="margin-top-bottom boton">Volver a Inicio</a></p>
+                </div>
+                <div class="column">
+                    <p class="column__descripcion no-margin texto-justificado">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab neque, veritatis rem vero dolorum quo
+                        harum quasi accusantium ipsam quis exercitationem iusto pariatur blanditiis ut, distinctio beatae
+                        ipsum unde et?. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente accusamus ut
+                        distinctio unde commodi maiores eveniet quia reiciendis molestias numquam, porro modi molestiae hic
+                        repudiandae sit corporis nihil perspiciatis fuga.
+                    </p>
+                </div>
+            </article>
+            <article class="article-formulario">
+                <h2 class="article-formulario__caja texto-centro">Contáctame</h2>
+                <p class="article-formulario__caja texto-justificado padding-left-rigth">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Excepturi corporis amet, facilis ea dolorum
+                    dolore ullam laborum debitis. Amet aspernatur impedit odit ratione dignissimos cupiditate
+                    praesentium adipisci, quasi animi eaque!.lore.</p>
+                <form class="formulario article-formulario__caja">
+                    <fieldset>
+                        <div class="contenedor-campos padding-left-rigth">
+                            <div class="campo">
+                                <label for="name">Nombre</label>
+                                <input class="input-texto" type="text" name="name" id="name"
+                                    placeholder="Nombre completo" required>
+                            </div>
+
+                            <div class="campo">
+                                <label for="correo">Correo</label>
+                                <input class="input-texto" type="email" name="correo" id="correo" placeholder="E-mail"
+                                    required>
+                            </div>
+
+                            <div class="campo">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea class="input-texto" name="mensaje" rows="5" id="mensaje"
+                                    placeholder="Ingresa un mensaje" required></textarea>
+                            </div>
+                        </div><!-- .contenedor-campos-->
+                        <div class="btnEnviar">
+                            <input class="button" type="submit" name="message" value="Enviar">
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="sociales">
+            <h2 class="position-absoluta no-margin texto-centro texto-mayuscula">Síguenos</h2>
+            <div class="social">
+                <img src="./img/facebook.svg" alt="facebook" title="facebook">
+            </div>
+            <div class="social">
+                <img src="./img/instagram.svg" alt="instagram" title="instagram">
+            </div>
+            <div class="social">
+                <img src="./img/linkedin.svg" alt="linkedin" title="linkedin">
+            </div>
+
+            <p class="copyrigth no-margin texto-centro">Copyrigth &copy; 2021 Antonio Sevilla | Diseñado y Desarrollado
+                por: Juan J. Huiza</p>
+        </div> <!-- .sociales-->
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/evento.js"></script>
+</body>
+
+</html>
