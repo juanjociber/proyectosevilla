@@ -155,6 +155,11 @@ span{
 ==============================*/
 .aside{
     display: none;
+    border: 1px solid red;
+}
+.aside__imagen{
+    border: 1px solid blue;
+    width: 100%;
 }
 .aside__nombre{
     color: var(--blanco);
