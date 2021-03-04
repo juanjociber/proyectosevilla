@@ -23,3 +23,6 @@ $('.header').click(function(){
     $('main').children('aside').css('display','block');
     $('main').children('aside').children('h2').css('display','none');
 })
+$('.header').dblclick(function(){
+    $('main').children('aside').css('display','none');
+})
